@@ -649,10 +649,10 @@ small {
     display: block;
     font-size: 14px;
   }
-  h3, .container {
+/*  h3, .container {
     position: relative;
     top: 64px;
-  }
+  }*/
   section#intro {
     margin-bottom: -64px;
   }
@@ -822,10 +822,12 @@ select{
 }
 
 @media (max-width: 576px) {
+    .section.scrollspy.full-height.contact-section{
+      height: fit-content;
+    }
     .form-title {
         font-size: 18px; /* Further adjust title size for very small screens */
     }
-
     .form-control, .custom-select, .contect-btn {
         font-size: 14px; /* Further adjust font size for very small screens */
         padding: 8px; /* Adjust padding for smaller screens */
