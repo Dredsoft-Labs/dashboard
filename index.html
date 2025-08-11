@@ -201,7 +201,7 @@
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Education section" href="#teams" class="waves-effect waves-dark teal-text"><i
-            class="fa-solid fa-people-group small"></i><span>Teams</span></a>
+            class="fa-solid fa-people-group small"></i><span class="thisisteams">Teams</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -1047,18 +1047,17 @@
           <div class="col s12 m6 l4">
             <div class="cardofteam">
               <div class="team-card">
-                <img src="assets/img/Mert-Can-Edis.jpg" alt="Team Member" class="team-img">
-                <h3 class="team-name">Mert Can Edis</h3>
+                <img src="assets/img/Keith-Hobbs.jpg" alt="Team Member" class="team-img">
+                <h3 class="team-name">Keith Hobbs</h3>
                 <p class="team-desc">
-                  CTO, Technical Solution Director<br>
-                  Software Lead, Scrum Master<br>
-                  March 2020 - Present
+                  Board Member, Executive Director<br>
+                  Strategic Advisor<br>
+                  September 2022 - Present
                 </p>
                 <!-- <a href="#" class="read-more">Read more...</a> -->
               </div>
             </div>
           </div>
-          <!-- Education -->
           <div class="col s12 m6 l4">
             <div class="cardofteam">
               <div class="team-card">
@@ -1090,6 +1089,20 @@
           <div class="col s12 m6 l4">
             <div class="cardofteam">
               <div class="team-card">
+                <img src="assets/img/Mert-Can-Edis.jpg" alt="Team Member" class="team-img">
+                <h3 class="team-name">Mert Can Edis</h3>
+                <p class="team-desc">
+                  CTO, Technical Solution Director<br>
+                  Software Lead, Scrum Master<br>
+                  March 2020 - Present
+                </p>
+                <!-- <a href="#" class="read-more">Read more...</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="cardofteam">
+              <div class="team-card">
                 <img src="assets/img/Leo-Broughton.jpeg" alt="Team Member" class="team-img">
                 <h3 class="team-name">Leo Broughton</h3>
                 <p class="team-desc">
@@ -1101,7 +1114,22 @@
               </div>
             </div>
           </div>
+          <div class="col s12 m6 l4">
+            <div class="cardofteam">
+              <div class="team-card">
+                <img src="assets/img/Linda-Gabriela-Rodriguez-Mendoza.jpeg" alt="Team Member" class="team-img">
+                <h3 class="team-name">Linda Gabriela</h3>
+                <p class="team-desc">
+                  Hiring of Talent Acquisition<br>
+                  Web3 & DeFi Recruitment<br>
+                  July 2022 - Present
+                </p>
+                <!-- <a href="#" class="read-more">Read more...</a> -->
+              </div>
+            </div>
+          </div>
         </div>
+        <button id="read-more-btn">View More</button>
       </div>
     </section>
 
@@ -1229,6 +1257,25 @@
       }, 2000);
     });
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".cardofteam");
+  const readMoreBtn = document.getElementById("read-more-btn");
+
+  // Hide all cards after the first 3
+  cards.forEach((card, index) => {
+    if (index >= 6) {
+      card.classList.add("hidden");
+    }
+  });
+
+  // Show all cards and hide button on click
+  readMoreBtn.addEventListener("click", () => {
+    cards.forEach(card => card.classList.remove("hidden"));
+    readMoreBtn.style.display = "none";
+  });
+});
+</script>
 </body>
 
 </html>

@@ -661,6 +661,9 @@ small {
     right: initial;
     top: initial;
   }
+  .thisisteams {
+    margin-left: 22px;
+  }
 }
 
 video {
@@ -706,6 +709,9 @@ video {
   }
   #intro.section {
     background-position-x: 30%;
+  }
+  .thisisteams{
+    margin-left: 23px;
   }
 }
 
@@ -852,6 +858,9 @@ select{
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+.cardofteam.hidden {
+  display: none;
+}
 .team-card {
   text-align: center;
   padding: 10px 10px;
@@ -889,6 +898,31 @@ select{
 .team-social a:hover {
   color: #004d40;
 }
+  /* .team-card.hidden {
+    display: none;
+  } */
+  #read-more-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #008073, #00796b);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  #read-more-btn:hover {
+       background-color: #004d40; /* Button hover background color */
+    transform: translateY(-2px); /* Button hover effect */
+  }
+  #read-more-btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.5); /* Focus shadow */
+  }
 .custom-alert {
   display: none;
   background-color: #d4edda; /* light green */
