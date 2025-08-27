@@ -1030,7 +1030,7 @@ select{
     position: relative;
     color: #fff;
     padding: 60px 20px;
-    background: url('/dredsoft/assets/img/background1.jpg') no-repeat center center/cover;
+    background: url('/assets/img/background1.jpg') no-repeat center center/cover;
     background-attachment: fixed; /* Parallax effect */
     z-index: 1;
 }
